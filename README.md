@@ -1,2 +1,61 @@
-# Robot-Command-Simulator
-A CLI robot command simulator built using Python to simulate robot movement, direction, and position tracking on a grid.
+# Python Robot Command Simulator
+
+## About
+
+A CLI Robot Command Simulator built using Python.
+This application simulates robot movement on a 2D grid by processing commands such as forward, backward, left, and right while tracking position and direction.
+
+---
+
+## ✨ Features
+
+✔️ Move robot forward
+✔️ Move robot backward
+✔️ Turn left or right
+✔️ Track robot position
+✔️ Display current facing direction
+✔️ Command-based simulation
+
+---
+
+## 🛠️ Tech Used
+
+* Python
+* Object-Oriented Programming (OOP)
+* Coordinates System (x, y)
+
+---
+
+## 🚀 How to Run
+
+1. Download the project
+2. Open the Python file
+3. Run the program
+4. Enter robot commands
+5. Track robot movement and status
+
+---
+
+## 📂 Project Structure
+
+```text
+python-robot-command-simulator/
+│── robot_simulator.py
+│── README.md
+```
+
+---
+
+## 🔮 Future Improvements
+
+* Add grid boundaries
+* Add obstacles
+* Store movement history
+* Add battery system
+* Auto path planning (A* / BFS)
+
+---
+
+## 👨‍💻 Author
+
+Made with Python for learning and robotics practice.
