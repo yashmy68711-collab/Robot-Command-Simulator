@@ -44,18 +44,3 @@ python-robot-command-simulator/
 │── README.md
 ```
 
----
-
-## 🔮 Future Improvements
-
-* Add grid boundaries
-* Add obstacles
-* Store movement history
-* Add battery system
-* Auto path planning (A* / BFS)
-
----
-
-## 👨‍💻 Author
-
-Made with Python for learning and robotics practice.
