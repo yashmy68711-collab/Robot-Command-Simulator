@@ -36,6 +36,8 @@ class Robot:
         elif direction == "West":
             self.x += 1
 
+        self.battery -= 5
+        self.history.append("Forward")
         print("Robot moved backward")
 
     def left(self):
