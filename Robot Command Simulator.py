@@ -56,12 +56,30 @@ class Robot:
         print("Robot turned left")
 
     def right(self):
+       if self.battery < 2:
+            print("Not enough battery!")
+            return
+
         self.direction_index = (self.direction_index + 1) % 4
+        self.battery -= 2
+        self.history.append("Right Turn")
         print("Robot turned right")
 
     def status(self):
         print(f"Position: ({self.x}, {self.y})")
         print(f"Facing: {self.directions[self.direction_index]}")
+        print(f"Battery: {self.battery}%")
+
+        if self.battery < 20:
+            print("Warning: Low Battery!")
+
+    def show_history(self):
+        if len(self.history) == 0:
+            print("No movement history")
+        else:
+            print("\nMovement History:")
+            for move in self.history:
+                print("-", move)
 
 
 robot = Robot()
