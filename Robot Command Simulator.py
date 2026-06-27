@@ -4,7 +4,7 @@ class Robot:
         self.y = 0
         self.directions = ["North", "East", "South", "West"]
         self.direction_index = 0
-         self.history = []
+        self.history = []
         self.battery = 100
 
     def forward(self):
