@@ -6,6 +6,9 @@ class Robot:
         self.direction_index = 0
 
     def forward(self):
+        if self.battery < 5:
+            print("Not enough battery!")
+            return
         direction = self.directions[self.direction_index]
 
         if direction == "North":
