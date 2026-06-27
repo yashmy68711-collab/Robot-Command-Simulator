@@ -46,7 +46,13 @@ class Robot:
         print("Robot moved backward")
 
     def left(self):
+        if self.battery < 2:
+            print("Not enough battery!")
+            return
+
         self.direction_index = (self.direction_index - 1) % 4
+        self.battery -= 2
+        self.history.append("Left Turn")
         print("Robot turned left")
 
     def right(self):
