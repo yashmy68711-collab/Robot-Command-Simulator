@@ -22,9 +22,14 @@ class Robot:
         elif direction == "West":
             self.x -= 1
 
+        self.battery -= 5
+        self.history.append("Forward")
         print("Robot moved forward")
 
     def back(self):
+        if self.battery < 5:
+            print("Not enough battery!")
+            return
         direction = self.directions[self.direction_index]
 
         if direction == "North":
