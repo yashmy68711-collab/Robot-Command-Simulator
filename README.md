@@ -30,9 +30,7 @@ This application simulates robot movement on a 2D grid by processing commands su
 
 1. Download the project
 2. Open the Python file
-3. Run the program
-4. Enter robot commands
-5. Track robot movement and status
+
 
 ---
 
